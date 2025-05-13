@@ -1,0 +1,31 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mèo Béo Bay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score-display">Điểm: 0</div>
+        <div id="instructions-overlay">
+            <p>Mèo Béo Bay!</p>
+            <p>Nhấn ENTER hoặc Chạm/Clích để Bắt đầu.</p>
+            <p>Mũi tên LÊN hoặc Chạm/Clích để Bay.</p>
+            <p>Mũi tên XUỐNG để Lao xuống (dùng bàn phím).</p>
+        </div>
+        <div id="game-over-overlay" style="display: none;">
+            <p>Game Over!</p>
+            <p>Điểm cuối: <span id="final-score">0</span></p>
+            <button id="restart-button">Chơi lại</button>
+        </div>
+        <div id="pause-overlay" style="display: none;">
+            <p>Tạm dừng</p>
+            <p>Nhấn ENTER để tiếp tục.</p>
+        </div>
+        <button id="pause-button" style="display: none;">⏸</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
